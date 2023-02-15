@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    padding: 2.5rem;
+}
+
+.description {
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-weight: 700;
+    padding-top: 2rem;
+    font-size: 1.75rem;
+}
+.text {
+    color: white;
+    font-size: .9rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.btn1 {
+    border: none;
+    width: 100%;
+    height: 4rem;
+    border-radius: .75rem;
+    color: white;
+    font-size: 0.85rem;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 0.45em 0px 0px #df6d6d;
+    font-weight: 400;
+}
+.btn1 span{
+    font-weight: 600;
+    
+}
+
+.card {
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    height: 55vh;
+    box-shadow: 0px 0.45em 0px 0px #df6d6d;
+}
+
+
+form {
+   height: 100%;
+   margin: 0;
+   padding: 0 ; 
+   display: flex;
+   flex-direction: column;
+   align-items: space-around;
+   
+   
+}
+input {
+    width: 100%;
+    height: 100%;
+    border: .05rem solid hsl(246, 25%, 77%);
+    border-radius: .25rem;
+    padding-left: 1.25rem;
+}
+input::placeholder {
+   
+   font-weight: 600;
+   color: hsl(249, 10%, 50%) ;
+   font-size: .75rem;
+}
+input:focus{
+    outline: none;
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+
+.btn2 {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    font-size: .9rem;
+    box-shadow: 0px 0.3em 0px 0px #2fb179;
+    letter-spacing: 0.5px;
+}
+.btn2:hover {
+    opacity: 0.7;
+    
+}
+.privcy {
+    font-size: .65rem;
+    color: hsl(246, 25%, 77%);
+    font-weight: 400;
+    text-align: center;
+    margin-top: .9375rem;
+    
+}
+
+.privcy span {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 600;
+}
+
+.errorMsg {
+    height: 10%;
+    align-self: flex-end;
+}
+.first_name_error , .last_name_error , .email_error , .Password_error , .Password_error_length {
+    color: hsl(0, 100%, 74%) ;
+    font-size: .625rem;
+    font-weight: 500 ;
+    display: none;
+}
+
+
+.input-field {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+
+    
+}
+
+.iconError , .iconErrorL , .iconErrorF , .iconErrorE , .iconErrorP{
+    position: absolute;
+    transform: translate(-6px);
+    display: none;
+}
+
+@media screen  and (min-width:700px){
+
+    body {
+        background-image: url("images/bg-intro-desktop.png");
+        
+    }
+    main {
+        
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 8vw;
+        
+    }
+    .description {
+        padding: 20% 0;
+        text-align: start;
+        margin: 0 3.75rem ;
+        
+    }
+    h1 {
+        font-size: 2.75rem;
+        
+        
+    }
+    .cards {
+        
+        width: 35vw;
+    }
+
+    .card {
+        
+        height: 60vh;
+    }
+    
+}
