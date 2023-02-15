@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on GitHub]()
-- Live Site URL: [GitHub Pages Live URL]()
+- Solution URL: [Code on GitHub](https://github.com/malek-bt/Intro-component-with-sign-up-form)
+- Live Site URL: [GitHub Pages Live URL](https://malek-bt.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
